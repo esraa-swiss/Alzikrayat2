@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  color: #0b5cad;
+  text-decoration: none;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  background: #0b5cad;
+  color: #fff;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .brand {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-links a,
+.nav-user a {
+  margin-right: 12px;
+}
+
+main {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.banner {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.home-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.home-actions a {
+  padding: 10px 18px;
+  background: #0b5cad;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.gallery-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.photo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.photo-card {
+  display: block;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+  color: #222;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.status {
+  padding: 12px;
+  text-align: center;
+}
+
+.status.error {
+  color: #b00020;
+}
+
+.comment-form {
+  margin-top: 16px;
+}
+
+.comment {
+  padding: 10px;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.comment small,
+.meta {
+  color: #666;
+}
+
+.login-register {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.switch-mode {
+  margin-top: 12px;
+  background: none;
+  color: #0b5cad;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+}
+.photo-card {
+  overflow: hidden;
+  display: block;
+}
+
+.photo-card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.photo-list .photo-card img {
+  height: 160px;
+}
